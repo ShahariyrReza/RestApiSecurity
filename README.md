@@ -1,1 +1,1 @@
-rest api security
+This repository contains a RESTful API built with Java Spring Boot that performs basic CRUD (Create, Read, Update, Delete) operations on a MySQL database. The API is designed as an example of implementing different data handling approaches in Spring Boot.
