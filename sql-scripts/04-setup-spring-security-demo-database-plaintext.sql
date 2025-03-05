@@ -9,7 +9,7 @@ DROP TABLE IF EXISTS `users`;
 
 CREATE TABLE `users` (
   `username` varchar(50) NOT NULL,
-  `password` varchar(50) NOT NULL,
+  `password` varchar(68) NOT NULL,
   `enabled` tinyint NOT NULL,
   PRIMARY KEY (`username`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -20,9 +20,9 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` 
 VALUES 
-('john','{noop}test123',1),
-('mary','{noop}test123',1),
-('susan','{noop}test123',1);
+('shahariyr','{bcrypt}$2a$10$/Bo2oCcCiLYOeo2yXl6oo.YGGZRWEuFDCnMEWJjw11M/INMkglXle',1),
+('mazher','{bcrypt}$2a$10$/Bo2oCcCiLYOeo2yXl6oo.YGGZRWEuFDCnMEWJjw11M/INMkglXle',1),
+('maksud','{bcrypt}$2a$10$doC25KbTC7qeFIQXDFPVt.KfWk1.vzUuS1Toe3la36sEmIr9IX5dK',1);
 
 
 --
@@ -42,11 +42,11 @@ CREATE TABLE `authorities` (
 
 INSERT INTO `authorities` 
 VALUES 
-('john','ROLE_EMPLOYEE'),
-('mary','ROLE_EMPLOYEE'),
-('mary','ROLE_MANAGER'),
-('susan','ROLE_EMPLOYEE'),
-('susan','ROLE_MANAGER'),
-('susan','ROLE_ADMIN');
+('shahariyr','ROLE_EMPLOYEE'),
+('mazher','ROLE_EMPLOYEE'),
+('mazher','ROLE_MANAGER'),
+('maksud','ROLE_EMPLOYEE'),
+('maksud','ROLE_MANAGER'),
+('maksud','ROLE_ADMIN');
 
 
